@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Suitability App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Crop Yield Prediction and Suitability</h1>
+    
+    <!-- Crop Yield Prediction -->
+    <section class="yield-section">
+        <h2>Predict Crop Yield</h2>
+        <form id="predictForm">
+            <label for="rainfall">Rainfall (mm):</label>
+            <input type="number" id="rainfall" required>
+            <label for="temperature">Temperature (°C):</label>
+            <input type="number" id="temperature" step="0.1" required>
+            <label for="soil_ph">Soil pH:</label>
+            <input type="number" id="soil_ph" step="0.1" required>
+            <label for="fertilizer">Fertilizer Use (kg/ha):</label>
+            <input type="number" id="fertilizer" required>
+            <button type="submit">Predict Yield</button>
+        </form>
+        <div id="yieldResult"></div>
+    </section>
+
+    <!-- Crop Suitability -->
+    <section class="suitability-section">
+        <h2>Check Crop Suitability</h2>
+        <form id="suitabilityForm">
+            <label for="crop">Crop:</label>
+            <select id="crop">
+                <option value="wheat">Wheat</option>
+                <option value="rice">Rice</option>
+                <option value="corn">Corn</option>
+            </select>
+            <label for="rainfall_suitability">Rainfall (mm):</label>
+            <input type="number" id="rainfall_suitability" required>
+            <label for="temperature_suitability">Temperature (°C):</label>
+            <input type="number" id="temperature_suitability" step="0.1" required>
+            <label for="soil_ph_suitability">Soil pH:</label>
+            <input type="number" id="soil_ph_suitability" step="0.1" required>
+            <button type="submit">Check Suitability</button>
+        </form>
+        <div id="suitabilityResult"></div>
+    </section>
+
+    <!-- Regional Recommendations -->
+    <section class="regions-section">
+        <h2>Find Best Regions for Your Crop</h2>
+        <form id="regionsForm">
+            <label for="temperature_region">Temperature (°C):</label>
+            <input type="number" id="temperature_region" required>
+            <label for="soil_ph_region">Soil pH:</label>
+            <input type="number" id="soil_ph_region" required>
+            <label for="rainfall_region">Rainfall (mm):</label>
+            <input type="number" id="rainfall_region" required>
+            <button type="submit">Find Regions</button>
+        </form>
+        <div id="regionsResult"></div>
+    </section>
+
+    <!-- Geolocation and Weather -->
+    <section class="geolocation-section">
+        <h2>Weather and Crop Suggestion</h2>
+        <button id="getLocation">Get My Location</button>
+        <div id="geoWeatherResult"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+{
+    "crops": [
+      {
+        "name": "wheat",
+        "temperature": {
+          "min": 15,
+          "max": 25
+        },
+        "rainfall": {
+          "min": 300,
+          "max": 500
+        },
+        "soil_ph": {
+          "min": 6.0,
+          "max": 7.0
+        },
+        "details": "Wheat is a cereal grain widely grown for its seed, a staple food worldwide."
+      },
+      {
+        "name": "rice",
+        "temperature": {
+          "min": 20,
+          "max": 30
+        },
+        "rainfall": {
+          "min": 500,
+          "max": 2000
+        },
+        "soil_ph": {
+          "min": 5.5,
+          "max": 6.5
+        },
+        "details": "Rice is a staple food for a large part of the world's population."
+      },
+      {
+        "name": "corn",
+        "temperature": {
+          "min": 18,
+          "max": 27
+        },
+        "rainfall": {
+          "min": 400,
+          "max": 800
+        },
+        "soil_ph": {
+          "min": 5.8,
+          "max": 7.0
+        },
+        "details": "Corn, also known as maize, is a versatile crop used as food, fodder, and biofuel."
+      }
+    ]
+  }
+  
